@@ -1,14 +1,6 @@
 terraform {
-  #backend "remote" {
-  #  hostname = "app.terraform.io"
-  #  organization = "ExamPro"
-
-  #  workspaces {
-  #    name = "getting-started"
-  #  }
-  #}
   cloud {
-    hostname = "app.terraform.io"
+    hostname     = "app.terraform.io"
     organization = "ExamPro"
 
     workspaces {
@@ -17,9 +9,9 @@ terraform {
   }
 
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
     }
   }
 }
@@ -27,3 +19,4 @@ terraform {
 locals {
   project_name = "Andrew"
 }
+
