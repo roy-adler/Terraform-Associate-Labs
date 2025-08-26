@@ -1,1 +1,2 @@
-instance_type="t2.micro"
+instance_type = "Standard_B1s"
+
