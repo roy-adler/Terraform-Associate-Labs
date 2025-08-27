@@ -1,13 +1,4 @@
 terraform {
-  cloud {
-    hostname     = "app.terraform.io"
-    organization = "ExamPro"
-
-    workspaces {
-      name = "getting-started"
-    }
-  }
-
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"

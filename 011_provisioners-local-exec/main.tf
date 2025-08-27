@@ -58,6 +58,7 @@ resource "azurerm_linux_virtual_machine" "my_server" {
   admin_username      = "azureuser"
   network_interface_ids = [azurerm_network_interface.nic.id]
   admin_password      = "P@ssword1234!"
+  disable_password_authentication = false
 
   os_disk {
     caching              = "ReadWrite"
